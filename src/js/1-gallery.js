@@ -92,6 +92,8 @@ const imageLightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+imageLightbox.refresh();
+
 imageLightbox.on('shown.simplelightbox', () => {
   const overlay = document.querySelector('.sl-wrapper');
   const counter = document.querySelector('.sl-counter');
@@ -105,4 +107,3 @@ imageLightbox.on('shown.simplelightbox', () => {
   arrowNav.forEach(item => (item.style.color = '#fff'));
 })
 
-imageLightbox.open();
