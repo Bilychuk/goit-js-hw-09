@@ -1,4 +1,8 @@
 /* Reset styles */
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -13,10 +17,12 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -32,4 +38,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  background: #fff;
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+section {
+  margin-bottom: 16px;
 }
