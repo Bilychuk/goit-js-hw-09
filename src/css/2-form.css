@@ -51,7 +51,7 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback-form input:focus {
+.feedback-form input:hover {
   border-color: #000;
 }
 
@@ -75,7 +75,7 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback-form textarea:focus {
+.feedback-form textarea:hover {
   border-color: #000;
 }
 

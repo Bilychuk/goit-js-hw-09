@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -34,17 +39,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #fff;
-  width: 1440px;
-  margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 input {
