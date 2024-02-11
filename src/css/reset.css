@@ -30,10 +30,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -41,6 +37,7 @@ img {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   width: 1440px;
   margin: 0 auto;
@@ -48,6 +45,16 @@ body {
   padding-bottom: 24px;
   padding-left: 156px;
   padding-right: 156px;
+}
+
+input {
+  font-family: inherit;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 section {
