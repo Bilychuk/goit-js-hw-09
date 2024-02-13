@@ -1,3 +1,6 @@
+import iziToast from 'izitoast';
+import "izitoast/dist/css/iziToast.min.css";
+
 const feedbackForm = document.querySelector('.feedback-form');
 const emailInput = feedbackForm.querySelector('input[name="email"]');
 const messageInput = feedbackForm.querySelector('textarea[name="message"]');
@@ -6,8 +9,8 @@ const savedFormData = localStorage.getItem(STORAGE_KEY);
     
 if (savedFormData) {
     const { email, message } = JSON.parse(savedFormData)
-    emailInput.value = email || "";
-    messageInput.value = message || "";
+    emailInput.value = email;
+    messageInput.value = message;
 }
 feedbackForm.addEventListener('input', setItemToLocalStorage);
 
@@ -22,7 +25,12 @@ feedbackForm.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
     event.preventDefault();
     if (!emailInput.value || !messageInput.value) { 
-        return;
+      iziToast.info({
+       title: 'Alert',
+       message: 'Please fill all fields!',
+       position: 'center',
+      });
+       return;
     }
     localStorage.removeItem(STORAGE_KEY);
     
